@@ -25,7 +25,7 @@ class BaseAction():
             return False
 
     def base_get_toast_text(self,toast):
-        if self.base_is_exist_toast(toast) is True:
+        if self.base_is_exist_toast(toast):
             toast_message = By.XPATH, "//*[contains(@text,'%s')]" % toast
             return self.base_find(toast_message).text
         else:

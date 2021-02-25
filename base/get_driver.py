@@ -8,6 +8,8 @@ def init_driver():
     desired_caps['platformVersion'] = '5.1'
     #手机的版本号(可随便写，不能不写)
     desired_caps['deviceName'] = '192.168.56.101:5555'
+    #启用toast
+    desired_caps['automationName'] = 'Uiautomator2'
     # 输入中文设置
     desired_caps['unicodekeyboard'] = True
     desired_caps['resetkeyboard'] = True

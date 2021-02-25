@@ -24,7 +24,7 @@ class TestLogin():
         self.page.login.input_username(username)
         self.page.login.input_password(password)
         self.page.login.click_login()
-        if toast =="Null":
+        if toast is None:
             print(self.page.me.get_me_text())
             try:
                 assert self.page.me.get_me_text() =="baby_fan"
